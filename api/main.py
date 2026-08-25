@@ -1,7 +1,7 @@
-from fastapi import FastAPI
-from pydantic import BaseModel, Field
 import joblib
 import pandas as pd
+from fastapi import FastAPI
+from pydantic import BaseModel, Field
 
 # Load the trained model once, when the API starts
 model = joblib.load("models/xgb_model.pkl")
